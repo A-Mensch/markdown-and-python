@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="markdown">Markdown</h1>
+<h2 id="allgemein">Allgemein</h2>
+<p>Markdown ist eine Auszeichnungssprache, die möglichst einfach zu lesen und zu schreiben sein soll.<br />
+Ein Markdown-Dokument soll ohne Formatierung nicht komplett nach Code aussehen, sondern einigermaßen gut aussehen.<br />
+Die Syntaxzeichen sind so gewählt, dass diese auch Sinn ergeben wenn diese nicht formatiert werden.<br />
+--- ##Syntax ### - Durch eine leere Zeile entsteht ein Absatz.<br />
+- Druch 2 Leerzeichen hintereinader<br />
+entsteht ein Zeilenubruch<br />
+- Durch 1-6 # vor einer Zeile entstehen verschieden große Überschriften:<br />
+#1. Überschrift ##2. Überschrift ###3. Überschrift ####4. Überschrift #####5. Überschrift ######6. Überschrift<br />
+bei #1 gibt es die Alternative = und bei #2 - in die nächste Zeile zu setzten.</p>
+<ul>
+<li>Durch mindestens 3 - oder * in einer Zeile, mit sonst nur Leerzeichen, entsteht eine horizontale Linie:</li>
+</ul>
+<hr />
+<ul>
+<li>*Kursiv* <em>Kursiv</em></li>
+<li>**Fett** <strong>Fett</strong></li>
+<li>***Fett-kursiv*** <strong><em>Fett-kursiv</em></strong><br />
+Anstatt den * können genauso gut _ benutzt werden</li>
+<li><h2 id="inline-quelltext-inline-quelltext">`Inline-Quelltext` <code>Inline-Quelltext</code></h2></li>
+<li>Zitate entstehen durch &gt; vor der Zeile, dieses wird dann in einem HTML-Blockquote-Element angezeigt:</li>
+</ul>
+<blockquote>
+<p>Dies ist ein Zitat, das in einem HTML-Blockquote-Element angezeigt wird.</p>
+</blockquote>
+<ul>
+<li>Codeblöcke entstehen nach einem Absatz und 4 Leerzeichen eingerückt sind:</li>
+</ul>
+<p>Absatz</p>
+<pre><code>Code Block
+Code Block
+Code Block</code></pre>
+<ol style="list-style-type: decimal">
+<li>ein Punkt einer Geordneten Liste entsteht durch ein 1. vor der Zeile</li>
+<li>es ist komplett egal welche Zahl für einen Punkt genommen wird, es kann auch immer die gleiche sein.</li>
+<li>die Reihenfolge ist dabei auch egal.
+<ol style="list-style-type: decimal">
+<li>Unterpunkte funktionieren genauso wird bei ungeordneten Listen.</li>
+</ol></li>
+</ol>
+<hr />
+<ul>
+<li><p>Hyperlinks werden so implimentiert:<br />
+[Beschriftung](https://www.gsi.de/&quot;Titel&quot;)<br />
+<a href="https://www.gsi.de/%22Titel%22">Beschriftung</a></p></li>
+<li><p>Bilder werden genauso implimentiert nur mit einem !:<br />
+![Beschriftung](https://theory.gsi.de/hirschegg/2019/img/GSI_Logo.png &quot;Titel&quot;)<br />
+<img src="https://theory.gsi.de/hirschegg/2019/img/GSI_Logo.png" alt="Beschriftung" /></p></li>
+</ul>
+</body>
+</html>
