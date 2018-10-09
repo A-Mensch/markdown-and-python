@@ -1,7 +1,7 @@
-#Markdown
+#Markdown  
 
 
-##Allgemein
+##Allgemein  
 Markdown ist eine Auszeichnungssprache, die möglichst einfach zu lesen und zu schreiben sein soll.  
 Ein Markdown-Dokument soll ohne Formatierung nicht komplett nach Code aussehen, sondern einigermaßen gut aussehen.  
 Die Syntaxzeichen sind so gewählt, dass diese auch Sinn ergeben wenn diese nicht formatiert werden.  
