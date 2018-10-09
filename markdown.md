@@ -1,23 +1,23 @@
-#Markdown  
+# Markdown  
 
 
-##Allgemein  
+## Allgemein  
 Markdown ist eine Auszeichnungssprache, die möglichst einfach zu lesen und zu schreiben sein soll.  
 Ein Markdown-Dokument soll ohne Formatierung nicht komplett nach Code aussehen, sondern einigermaßen gut aussehen.  
 Die Syntaxzeichen sind so gewählt, dass diese auch Sinn ergeben wenn diese nicht formatiert werden.  
 ---
-##Syntax
+## Syntax
 ###
 - Durch eine leere Zeile entsteht ein Absatz.  
 - Druch 2 Leerzeichen hintereinader  
 entsteht ein Zeilenubruch  
 - Durch 1-6 \# vor einer Zeile entstehen verschieden große Überschriften:  
-#1. Überschrift
-##2. Überschrift
-###3. Überschrift
-####4. Überschrift
-#####5. Überschrift
-######6. Überschrift  
+# 1. Überschrift
+## 2. Überschrift
+### 3. Überschrift
+#### 4. Überschrift
+##### 5. Überschrift
+###### 6. Überschrift  
 bei \#1 gibt es die Alternative = und bei \#2 - in die nächste Zeile zu setzten.  
 
 - Durch mindestens 3 - oder * in einer Zeile, mit sonst nur Leerzeichen, entsteht eine horizontale Linie:  
