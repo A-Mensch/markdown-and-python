@@ -70,6 +70,16 @@ a = {3,5} 		#set
 a = [3,5] 		#list
 a = True 		#bool
 ```
+### Rechnungen
+```python
+4 + 2 #6
+4 - 2 #2
+4 * 2 #8
+4 / 2 #2
+9 % 4 #1
+```
+
+
 ### if else
 ```python
 if x < 5:
@@ -140,9 +150,21 @@ def name(x): 		#Definition
 5
 10
 ```
-
-
-
+### Rekursion
+```python
+def funk(n): #eine Funktion die sich selbst immer wieder aufruft
+	n = n + 1 #somit entstehen viele untereinader geschachtelte Funktionen
+	funk(n) #begrenzt durch Anzahl der möglichen Funktionsaufrufe
+	
+funk(0)
+```
+### Iteration
+```python
+n = 100000
+liste = []
+for i in range(0, n): #eine Schleife, die sich wiederholt und Speicher füllt
+	liste.append(i) #begrenzt durch RAM
+```
   
 
   
