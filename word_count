@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+
+"""
+Dieses Programm zaehlt Woerter einer Datei.
+"""
+
+import argparse
+import logging
+import sys
+
+
+params = argparse.ArgumentParser(description = __doc__, formatter_class = argparse.RawDescriptionHelpFormatter)#argparse Benennung und help Funktion
+params.add_argument('-l', '--lines',action = 'store_true', help='Count lines')#optionales Argument -l
+params.add_argument('-c', '--char',action = 'store_true', help='Count chars')#optionales Argument -c
+params.add_argument('file',action = 'store', nargs='?', help='file path')#positionelles, optionales Argument file
+
+#Argumente parsen
+args = params.parse_args()
+
+#Eingabe Auswahl
+if not sys.stdin.isatty():#Standart Eingabe
+    data = sys.stdin.read()
+elif args.file:#Eingabe durch file Argument
+    file = args.file
+    with open(file, 'r') as fileobj:
+        data = fileobj.read()
+else:
+    raise Exception('No input data specified, STDIN and file argument are empty!')
+
+
+# Entscheidung ob Woerter Zeilen oder Zeichen gezaehlt werden
+if args.lines:
+    l = len(data.split('\n'))
+    w = ('Zeilen')
+elif args.char:
+    l = len(data)
+    w = ('Zeichen')
+else:       
+    l = len(data.split())
+    w = ('Woerter')
+
+#Ausgabe des Ergebnis
+print (f'Die Datei hat {l} {w}')
+fileobj.close()
